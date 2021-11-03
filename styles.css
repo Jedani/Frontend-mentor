@@ -34,8 +34,9 @@ body {
 	justify-content: center;
 }
 
-.blue {
-	border: 2px solid blue;
+.amount {
+	color: white;
+	font-size: xx-large;
 }
 
 .arcyan {
@@ -54,7 +55,7 @@ body {
 }
 
 .rstbtn {
-	margin-top: 45%;
+	margin-top: 24%;
 	margin-left: 2%;
 	margin-right: 2%;
 }
@@ -89,4 +90,14 @@ input {
 	background-color: hsl(180, 23%, 92%);
 	border-style: none;
 	border-radius: 7px;
+}
+
+.dollar {
+	margin-left: 70%;
+	width: 40%;
+	height: 30px;
+	transform: translateY(-70px);
+	height: 40px;
+	font-size: 40px;
+	font-weight: bolder;
 }
