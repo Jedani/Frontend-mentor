@@ -48,6 +48,9 @@ body {
 	border-radius: 5px;
 	font-size: larger;
 }
+.arcyan:hover {
+	cursor: pointer;
+}
 
 .leftcontent {
 	margin: 20px;
@@ -66,6 +69,10 @@ body {
 	border-radius: 10px;
 	background-color: hsl(185, 82%, 46%);
 	font-size: large;
+}
+.reset:hover {
+	transition: ease-in-out;
+	cursor: pointer;
 }
 
 .small {
