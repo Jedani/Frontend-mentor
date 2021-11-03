@@ -101,3 +101,18 @@ input {
 	font-size: 40px;
 	font-weight: bolder;
 }
+
+#iconone {
+	background-image: url("./images/icon-dollar.svg");
+	background-repeat: no-repeat;
+	background-position-x: 10px;
+	background-size: 5%;
+	background-position-y: center;
+}
+#icontwo {
+	background-image: url("./images/icon-person.svg");
+	background-repeat: no-repeat;
+	background-position-x: 10px;
+	background-size: 5%;
+	background-position-y: center;
+}
