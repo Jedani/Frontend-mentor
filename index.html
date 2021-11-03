@@ -19,8 +19,8 @@
 			<div class="wrapper">
 				<div class="leftcontent">
 					<div>
-						<h2>Bill</h2>
-						<input id="iconone" type="text" placeholder="" />
+						<h2 id="bill">Bill</h2>
+						<input id="iconone" type="text" placeholder="" oninput="bill()" />
 					</div>
 					<div>
 						<h2>Select Tip %</h2>
@@ -36,34 +36,48 @@
 						<div class="darcyan">
 							<button class="arcyan">25%</button>
 							<button class="arcyan">50%</button>
-							<input class="custominpt" placeholder="Custom" />
+							<input
+								class="custominpt"
+								placeholder="Custom"
+								id="customs"
+								oninput="custom()"
+							/>
 						</div>
 						<div>
 							<h2>Number of People</h2>
-							<input id="icontwo" type="text" placeholder="" />
+							<input
+								id="icontwo"
+								type="text"
+								placeholder=""
+								oninput="people()"
+							/>
 						</div>
 					</div>
 				</div>
 				<div class="darkcyan">
 					<div>
-						<div>
+						<div id="tip">
 							<h2>Tip Amount</h2>
 							<h2 class="small">/ person</h2>
 							<div class="dollar">
-								<span>$<span class="amount" id="tip"> 0.00</span></span>
+								<span class="dollarsign">$</span>
+								<span id="tipOnes">0</span><span>.</span
+								><span id="tipCents">00</span>
 							</div>
 						</div>
-						<div>
+						<div id="total">
 							<h2>Total</h2>
 							<h2 class="small">/ person</h2>
 							<div class="dollar">
-								<span>$<span class="amount" id="total"> 0.00</span></span>
+								<span class="dollarsign">$</span>
+								<span id="totalOnes">0</span><span>.</span
+								><span id="totalCents">00</span>
 							</div>
 						</div>
 					</div>
 					<div class="rstbtn">
 						<div>
-							<button class="reset" onclick="reset()">RESET</button>
+							<button class="reset">RESET</button>
 						</div>
 					</div>
 				</div>

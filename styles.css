@@ -112,13 +112,17 @@ input:hover {
 }
 
 .dollar {
-	margin-left: 70%;
+	margin-left: 65%;
 	width: 40%;
 	height: 30px;
-	transform: translateY(-70px);
+	transform: translateY(-75px);
 	height: 40px;
 	font-size: 40px;
-	font-weight: bolder;
+	font-weight: x-large;
+}
+
+.dollarsign {
+	color: hsl(185, 100%, 56%);
 }
 
 #iconone {
