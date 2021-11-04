@@ -33,11 +33,6 @@ body {
 	justify-content: center;
 }
 
-.amount {
-	color: white;
-	font-size: xx-large;
-}
-
 .arcyan {
 	margin: 2%;
 	background-color: hsl(183, 100%, 15%);
@@ -50,6 +45,8 @@ body {
 
 .arcyan:hover {
 	cursor: pointer;
+	background-color: hsl(185, 62%, 58%);
+	transition: all 1s ease-in-out;
 }
 
 .leftcontent {
@@ -58,17 +55,14 @@ body {
 	color: rgb(85, 85, 85);
 }
 
-.rstbtn {
-	margin-top: 24%;
-	margin-left: 2%;
-	margin-right: 2%;
-}
-
 .reset {
+	margin-right: 10%;
+	margin-top: 25%;
+	margin-bottom: 5%;
 	width: 100%;
 	height: 3rem;
 	border-radius: 10px;
-	background-color: hsl(185, 62%, 58%);
+	background-color: hsl(185, 51%, 52%);
 	font-size: large;
 }
 .reset:hover {
@@ -105,21 +99,13 @@ input {
 	background-color: hsl(180, 23%, 92%);
 	border-style: none;
 	border-radius: 7px;
+	margin-top: 4px;
+	font-size: x-large;
 }
 
 input:hover {
 	background-color: rgb(112, 179, 247);
 	transition: all 2s ease-in-out;
-}
-
-.dollar {
-	margin-left: 65%;
-	width: 40%;
-	height: 2rem;
-	transform: translateY(-75px);
-	height: 3rem;
-	font-size: 3rem;
-	font-weight: x-large;
 }
 
 .dollarsign {
@@ -139,4 +125,15 @@ input:hover {
 	background-position-x: 10px;
 	background-size: 5%;
 	background-position-y: center;
+}
+
+.error-message {
+	color: red;
+	margin-top: -4%;
+	margin-bottom: -1px;
+	margin-left: 50%;
+}
+#tipError {
+	margin-top: -14%;
+	margin-left: 0;
 }

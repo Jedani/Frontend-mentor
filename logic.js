@@ -87,3 +87,16 @@ function reset() {
 	document.getElementById("tipAmount").innerText = "$0.00";
 	document.getElementById("totalAmount").innerText = "$0.00";
 }
+
+window.moveCursor = (el, pos) => {
+	if (el.setSelectionRange) {
+		el.setSelectionRange(pos, pos);
+	} else if (el.createTextRange) {
+		const range = el.createTextRange();
+		range.collapse(true);
+		range.moveEnd("character", pos);
+		range.moveStart("character", pos);
+		range.select();
+	}
+};
+moveCursor(input, End);
