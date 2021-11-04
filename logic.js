@@ -82,7 +82,7 @@ function reset() {
 
 	const errorNodeList = document.getElementsByClassName("error-message");
 	for (const node of errorNodeList) {
-		node.style.display = "none";
+		node.style.display = "block";
 	}
 	document.getElementById("tipAmount").innerText = "$0.00";
 	document.getElementById("totalAmount").innerText = "$0.00";
