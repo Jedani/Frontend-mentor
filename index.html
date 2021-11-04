@@ -20,7 +20,7 @@
 				<div class="leftcontent">
 					<div>
 						<h2 id="bill">Bill</h2>
-						<input id="iconone" type="text" placeholder="" oninput="bill()" />
+						<input id="iconone" type="text" placeholder="" required />
 					</div>
 					<div>
 						<h2>Select Tip %</h2>
@@ -40,17 +40,12 @@
 								class="custominpt"
 								placeholder="Custom"
 								id="customs"
-								oninput="custom()"
+								required
 							/>
 						</div>
 						<div>
 							<h2>Number of People</h2>
-							<input
-								id="icontwo"
-								type="text"
-								placeholder=""
-								oninput="people()"
-							/>
+							<input id="icontwo" type="text" placeholder="" required />
 						</div>
 					</div>
 				</div>
@@ -61,8 +56,10 @@
 							<h2 class="small">/ person</h2>
 							<div class="dollar">
 								<span class="dollarsign">$</span>
-								<span id="tipOnes">0</span><span>.</span
-								><span id="tipCents">00</span>
+								<span>
+									<span id="tipOnes">0</span><span>.</span
+									><span id="tipCents">00</span>
+								</span>
 							</div>
 						</div>
 						<div id="total">
@@ -70,14 +67,16 @@
 							<h2 class="small">/ person</h2>
 							<div class="dollar">
 								<span class="dollarsign">$</span>
-								<span id="totalOnes">0</span><span>.</span
-								><span id="totalCents">00</span>
+								<span id="reset">
+									<span id="ones">0</span><span>.</span
+									><span id="cents">00</span>
+								</span>
 							</div>
 						</div>
 					</div>
 					<div class="rstbtn">
 						<div>
-							<button class="reset">RESET</button>
+							<button class="reset" onclick="reset()">RESET</button>
 						</div>
 					</div>
 				</div>
