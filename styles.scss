@@ -6,6 +6,9 @@ body {
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: 10%;
+	@media (max-width: 375px) {
+		display: block;
+	}
 }
 
 .wrapper {
@@ -41,11 +44,11 @@ body {
 .custominpt {
 	height: 2.2rem;
 	font-size: x-large;
+	width: 100px;
 }
 .custominpt:hover {
-	border-style: inset;
 	background-color: rgb(112, 179, 247);
-	transition: all 2s ease-in-out;
+	transition: all 2s ease-in;
 }
 
 #tipError {
@@ -146,6 +149,6 @@ input:hover {
 .cst {
 	height: 20%;
 	width: 28%;
-	margin-left: 68%;
+	margin-left: 70%;
 	margin-top: -14%;
 }
