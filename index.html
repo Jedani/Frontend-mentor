@@ -24,6 +24,7 @@
 							Can't be a negative or zero
 						</h5>
 						<input
+							type="number"
 							id="iconone"
 							type="text"
 							placeholder=""
@@ -36,22 +37,35 @@
 						<h2>Select Tip %</h2>
 					</div>
 					<div>
-						<div class="darcyan">
-							<button onclick="" class="arcyan">5%</button>
-							<button onclick="" class="arcyan">10%</button>
-							<button onclick="" class="arcyan">15%</button>
+						<div class="darcyan" id="btn">
+							<button onclick="custom(event)" value="5" class="arcyan">
+								5%
+							</button>
+							<button onclick="custom(event)" value="10" class="arcyan">
+								10%
+							</button>
+							<button onclick="custom(event)" value="15" class="arcyan">
+								15%
+							</button>
 						</div>
-						<div class="darcyan">
-							<button onclick="" class="arcyan">25%</button>
-							<button onclick="" class="arcyan">50%</button>
-							<h6 class="error-message" id="tipError">Can't be negative</h6>
-							<input
-								class="custominpt"
-								placeholder="Custom"
-								id="customs"
-								required
-								oninput="custom(event)"
-							/>
+						<div class="darcyan1" id="btn">
+							<button onclick="custom(event)" value="25" class="arcyan">
+								25%
+							</button>
+							<button onclick="custom(event)" value="50" class="arcyan">
+								50%
+							</button>
+							<div class="cst">
+								<h6 class="error-message" id="tipError">Can't be negative</h6>
+								<input
+									type="number"
+									class="custominpt"
+									placeholder="Custom"
+									id="customs"
+									required
+									oninput="custom(event)"
+								/>
+							</div>
 						</div>
 						<div>
 							<h2>Number of People</h2>
@@ -59,6 +73,7 @@
 								Can't be a negative or zero
 							</h5>
 							<input
+								type="number"
 								id="icontwo"
 								type="text"
 								placeholder=""
@@ -76,14 +91,20 @@
 								Tip Amount <br />
 								<span class="small">/ person</span>
 							</p>
-							<p id="tipAmount"><span class="dollarsign">$</span> 0.00</p>
+							<p>
+								<span class="dollarsign">$</span
+								><span id="tipAmount"> 0.00</span>
+							</p>
 						</div>
 						<div id="total">
 							<p>
 								Total Amount <br />
 								<span class="small">/ person</span>
 							</p>
-							<p id="totalAmount"><span class="dollarsign">$</span> 0.00</p>
+							<p>
+								<span class="dollarsign">$</span
+								><span id="totalAmount"> 0.00</span>
+							</p>
 						</div>
 					</div>
 					<div class="rstbtn">
