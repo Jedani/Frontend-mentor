@@ -1,154 +1,273 @@
-body {
-	margin: 0;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	background-color: hsl(185, 41%, 84%);
-	background-image: url("./images/logo.svg");
+$backgroundColor: hsl(183, 100%, 15%);
+$bodybackground: hsl(185, 41%, 84%);
+$wrapperColor: hsl(0, 0%, 100%);
+$resetButtonColor: #1d6c74;
+$footerColor: cadetblue;
+$errorColor: rgb(146, 13, 13);
+$hoverColor: hsl(185, 62%, 58%);
+$smalltextColor: rgb(78, 69, 69);
+$largeTextColor: hsl(0, 0%, 100%);
+$inputColor: hsl(184, 30%, 80%);
+
+@mixin svgProps {
+	background-repeat: no-repeat;
+	background-position-x: 10px;
+	background-size: 5%;
+	background-position-y: center;
+}
+@mixin logoProps {
+	background-image: url("../images/logo.svg");
 	background-repeat: no-repeat;
 	background-position-x: center;
-	background-position-y: 10%;
-	@media (max-width: 375px) {
-		display: block;
+	background-position-y: 5em;
+}
+
+@mixin container {
+	width: 100vw;
+	height: 100vh;
+	background-color: $bodybackground;
+	@include logoProps;
+}
+
+@mixin margins {
+	margin-top: 12em;
+	margin-left: 20%;
+	margin-right: 10%;
+}
+
+@mixin headers {
+	display: flex;
+	align-items: center;
+	height: 2em;
+	margin-top: 1em;
+}
+
+@mixin buttons {
+	height: 2em;
+	display: inline-block;
+	margin: 10px;
+}
+@mixin buttonsClass {
+	height: 3em;
+	width: 8em;
+	background-color: $backgroundColor;
+	color: $largeTextColor;
+	margin-left: 10px;
+	@include hover;
+}
+
+@mixin errorStyler {
+	width: 100%;
+	height: 0.6em;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 20%;
+}
+
+@mixin input {
+	width: 95%;
+	height: 100%;
+	border-style: none;
+	background-color: $inputColor;
+	margin-top: 5px;
+	border-radius: 7px;
+	font-size: xx-large;
+	margin-left: 10px;
+}
+@mixin hover {
+	&:hover {
+		cursor: pointer;
 	}
 }
 
-.wrapper {
-	display: flex;
-	margin-top: 15%;
-	margin: 15%;
-	border-radius: 30px;
-	width: 70%;
-	background-color: hsl(0, 0%, 100%);
-}
-
-.darkcyan {
-	background-color: hsl(183, 100%, 15%);
-	margin: 2%;
-	border-radius: 25px;
-	width: 60%;
-	color: hsl(0, 0%, 100%);
-	padding: 1%;
-}
-
-/* For the percentage buttons */
-.darcyan {
-	display: inline-block;
-	width: 95%;
-	height: 60px;
-}
-
-.darcyan1 {
-	display: inline-block;
-	width: 95%;
-}
-
-.custominpt {
-	height: 2.2rem;
-	font-size: x-large;
-	width: 100px;
-}
-.custominpt:hover {
-	background-color: rgb(112, 179, 247);
-	transition: all 2s ease-in;
-}
-
-#tipError {
-	margin-top: -1%;
-	margin-left: 0%;
-}
-
-.arcyan {
-	margin-left: 15px;
-	background-color: hsl(183, 100%, 15%);
-	width: 100px;
-	color: hsl(0, 0%, 100%);
-	height: 3rem;
-	border-radius: 5px;
-	font-size: larger;
-	margin-top: 1%;
-}
-
-.arcyan:hover {
-	cursor: pointer;
-	background-color: hsl(185, 62%, 58%);
-	transition: all 1s ease-in-out;
-}
-
-.leftcontent {
-	margin: 2%;
-	width: 50%;
-	color: rgb(85, 85, 85);
-}
-
-.reset {
-	margin-right: 10%;
-	margin-top: 30%;
-	margin-bottom: 2%;
-	width: 100%;
-	height: 3rem;
-	border-radius: 10px;
-	background-color: #1d6c74;
+body {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: large;
-}
-.reset:hover {
-	background-color: hsl(185, 100%, 50%);
-	cursor: pointer;
-	transition: all 2s ease-in-out;
-}
-
-.small {
-	font-size: small;
-	color: hsl(186, 14%, 43%);
-}
-
-footer {
-	background-color: cadetblue;
-	height: 50px;
-}
-
-input {
-	width: 95%;
-	height: 40px;
-	background-color: hsl(180, 23%, 92%);
-	border-style: none;
-	border-radius: 7px;
-	margin-top: 4px;
-	font-size: x-large;
-}
-
-input:hover {
-	background-color: rgb(112, 179, 247);
-	transition: all 2s ease-in-out;
-}
-
-.dollarsign {
-	color: hsl(185, 100%, 56%);
 }
 
 #iconone {
-	background-image: url("./images/icon-dollar.svg");
-	background-repeat: no-repeat;
-	background-position-x: 10px;
-	background-size: 5%;
-	background-position-y: center;
+	background-image: url("../images/icon-dollar.svg");
+	@include svgProps;
 }
 #icontwo {
-	background-image: url("./images/icon-person.svg");
-	background-repeat: no-repeat;
-	background-position-x: 10px;
-	background-size: 5%;
-	background-position-y: center;
+	background-image: url("../images/icon-person.svg");
+	@include svgProps;
 }
 
-.error-message {
-	color: red;
-	margin-top: -4%;
-	margin-bottom: -1px;
-	margin-left: 50%;
+.container {
+	border: 2px solid black;
+	@include container;
 }
 
-.cst {
-	height: 20%;
-	width: 28%;
-	margin-left: 70%;
-	margin-top: -14%;
+.wrapper {
+	background-color: $wrapperColor;
+	width: 50em;
+	height: 22em;
+	display: flex;
+	@include margins;
+	@media screen and (max-width: 400px) {
+		height: 10em;
+		display: inline-block;
+	}
+
+	border-radius: 30px;
+}
+
+.leftcontent {
+	font-size: 1em;
+	width: 24em;
+	height: 95%;
+	margin: 1em;
+	display: inline-block;
+
+	.billContent {
+		display: flex;
+		height: 5em;
+		.billInput {
+			.firstFlex {
+				display: inline-flex;
+				height: 30px;
+				width: 23em;
+
+				.key {
+					margin-top: 0;
+					width: 5em;
+					height: 1.5em;
+				}
+				.one {
+					width: 100%;
+					height: 1.5em;
+					display: flex;
+					align-items: center;
+					justify-content: left;
+					margin-left: 45%;
+					margin-top: 4px;
+					padding-top: 10px;
+				}
+			}
+
+			.iconone {
+				margin-top: 0.2em;
+				width: 23.5em;
+				height: 2.3em;
+
+				#iconone {
+					@include input;
+				}
+			}
+
+			.error-message {
+				color: $errorColor;
+			}
+		}
+	}
+	.tip {
+		@include headers;
+	}
+
+	.buttons {
+		height: 6.5em;
+
+		.five-fifteen {
+			@include buttons;
+			.arcyan {
+				@include buttonsClass;
+			}
+		}
+		.secondFlex {
+			display: inline-flex;
+			.toFifty {
+				@include buttons;
+				.arcyan {
+					@include buttonsClass;
+				}
+			}
+
+			.customInput {
+				display: block;
+				width: 7.2em;
+				height: 2.8em;
+				.two {
+					@include errorStyler;
+					.error-message {
+						color: $errorColor;
+					}
+				}
+
+				.customs {
+					height: 2em;
+					#customs {
+						width: 85%;
+						height: 100%;
+						margin-left: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	.people {
+		height: 4em;
+		.thirdFlex {
+			display: inline-flex;
+			height: 2em;
+			width: 24em;
+
+			.noOfPeople {
+				margin-top: 0;
+				width: 10em;
+				height: 1em;
+			}
+			.three {
+				.error-message {
+					width: 100%;
+					height: 1.5em;
+					display: flex;
+					align-items: center;
+					justify-content: left;
+					margin-top: 4px;
+					padding-top: 10px;
+					color: $errorColor;
+				}
+			}
+		}
+		.peopleInput {
+			#icontwo {
+				@include input;
+			}
+		}
+	}
+}
+.rightContent {
+	float: top;
+	float: right;
+	width: 24em;
+	background-color: $backgroundColor;
+	margin: 0.5em;
+	border-radius: 30px;
+
+	.Amounts {
+		padding: 0.5em;
+		color: $largeTextColor;
+	}
+
+	.resetbutton {
+		margin-top: 20%;
+		background-color: $backgroundColor;
+
+		.reset {
+			background-color: $inputColor;
+			margin-left: 5%;
+			width: 90%;
+			height: 3em;
+			border-radius: 10px;
+
+			&:hover {
+				background-color: $hoverColor;
+				@include hover;
+			}
+		}
+	}
 }

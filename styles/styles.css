@@ -1,142 +1,11 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #c5e4e7;
-  background-image: url("./images/logo.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 10%;
-}
-
-@media (max-width: 375px) {
-  body {
-    display: block;
-  }
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 15%;
-  margin: 15%;
-  border-radius: 30px;
-  width: 70%;
-  background-color: white;
-}
-
-.darkcyan {
-  background-color: #00494d;
-  margin: 2%;
-  border-radius: 25px;
-  width: 60%;
-  color: white;
-  padding: 1%;
-}
-
-/* For the percentage buttons */
-.darcyan {
-  display: inline-block;
-  width: 95%;
-  height: 60px;
-}
-
-.darcyan1 {
-  display: inline-block;
-  width: 95%;
-}
-
-.custominpt {
-  height: 2.2rem;
-  font-size: x-large;
-  width: 100px;
-}
-
-.custominpt:hover {
-  background-color: #70b3f7;
-  -webkit-transition: all 2s ease-in;
-  transition: all 2s ease-in;
-}
-
-#tipError {
-  margin-top: -1%;
-  margin-left: 0%;
-}
-
-.arcyan {
-  margin-left: 15px;
-  background-color: #00494d;
-  width: 100px;
-  color: white;
-  height: 3rem;
-  border-radius: 5px;
-  font-size: larger;
-  margin-top: 1%;
-}
-
-.arcyan:hover {
-  cursor: pointer;
-  background-color: #51cbd6;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.leftcontent {
-  margin: 2%;
-  width: 50%;
-  color: #555555;
-}
-
-.reset {
-  margin-right: 10%;
-  margin-top: 30%;
-  margin-bottom: 2%;
-  width: 100%;
-  height: 3rem;
-  border-radius: 10px;
-  background-color: #1d6c74;
   font-size: large;
 }
 
-.reset:hover {
-  background-color: #00eaff;
-  cursor: pointer;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-
-.small {
-  font-size: small;
-  color: #5e7a7d;
-}
-
-footer {
-  background-color: cadetblue;
-  height: 50px;
-}
-
-input {
-  width: 95%;
-  height: 40px;
-  background-color: #e6efef;
-  border-style: none;
-  border-radius: 7px;
-  margin-top: 4px;
-  font-size: x-large;
-}
-
-input:hover {
-  background-color: #70b3f7;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-
-.dollarsign {
-  color: #1fecff;
-}
-
 #iconone {
-  background-image: url("./images/icon-dollar.svg");
+  background-image: url("../images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position-x: 10px;
   background-size: 5%;
@@ -144,24 +13,281 @@ input:hover {
 }
 
 #icontwo {
-  background-image: url("./images/icon-person.svg");
+  background-image: url("../images/icon-person.svg");
   background-repeat: no-repeat;
   background-position-x: 10px;
   background-size: 5%;
   background-position-y: center;
 }
 
-.error-message {
-  color: red;
-  margin-top: -4%;
-  margin-bottom: -1px;
-  margin-left: 50%;
+.container {
+  border: 2px solid black;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c5e4e7;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 5em;
 }
 
-.cst {
-  height: 20%;
-  width: 28%;
-  margin-left: 70%;
-  margin-top: -14%;
+.wrapper {
+  background-color: white;
+  width: 50em;
+  height: 22em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12em;
+  margin-left: 20%;
+  margin-right: 10%;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    height: 10em;
+    display: inline-block;
+  }
+}
+
+.leftcontent {
+  font-size: 1em;
+  width: 24em;
+  height: 95%;
+  margin: 1em;
+  display: inline-block;
+}
+
+.leftcontent .billContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5em;
+}
+
+.leftcontent .billContent .billInput .firstFlex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 30px;
+  width: 23em;
+}
+
+.leftcontent .billContent .billInput .firstFlex .key {
+  margin-top: 0;
+  width: 5em;
+  height: 1.5em;
+}
+
+.leftcontent .billContent .billInput .firstFlex .one {
+  width: 100%;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 45%;
+  margin-top: 4px;
+  padding-top: 10px;
+}
+
+.leftcontent .billContent .billInput .iconone {
+  margin-top: 0.2em;
+  width: 23.5em;
+  height: 2.3em;
+}
+
+.leftcontent .billContent .billInput .iconone #iconone {
+  width: 95%;
+  height: 100%;
+  border-style: none;
+  background-color: #bdd9db;
+  margin-top: 5px;
+  border-radius: 7px;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+.leftcontent .billContent .billInput .error-message {
+  color: #920d0d;
+}
+
+.leftcontent .tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2em;
+  margin-top: 1em;
+}
+
+.leftcontent .buttons {
+  height: 6.5em;
+}
+
+.leftcontent .buttons .five-fifteen {
+  height: 2em;
+  display: inline-block;
+  margin: 10px;
+}
+
+.leftcontent .buttons .five-fifteen .arcyan {
+  height: 3em;
+  width: 8em;
+  background-color: #00494d;
+  color: white;
+  margin-left: 10px;
+}
+
+.leftcontent .buttons .five-fifteen .arcyan:hover {
+  cursor: pointer;
+}
+
+.leftcontent .buttons .secondFlex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.leftcontent .buttons .secondFlex .toFifty {
+  height: 2em;
+  display: inline-block;
+  margin: 10px;
+}
+
+.leftcontent .buttons .secondFlex .toFifty .arcyan {
+  height: 3em;
+  width: 8em;
+  background-color: #00494d;
+  color: white;
+  margin-left: 10px;
+}
+
+.leftcontent .buttons .secondFlex .toFifty .arcyan:hover {
+  cursor: pointer;
+}
+
+.leftcontent .buttons .secondFlex .customInput {
+  display: block;
+  width: 7.2em;
+  height: 2.8em;
+}
+
+.leftcontent .buttons .secondFlex .customInput .two {
+  width: 100%;
+  height: 0.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 20%;
+}
+
+.leftcontent .buttons .secondFlex .customInput .two .error-message {
+  color: #920d0d;
+}
+
+.leftcontent .buttons .secondFlex .customInput .customs {
+  height: 2em;
+}
+
+.leftcontent .buttons .secondFlex .customInput .customs #customs {
+  width: 85%;
+  height: 100%;
+  margin-left: 12px;
+}
+
+.leftcontent .people {
+  height: 4em;
+}
+
+.leftcontent .people .thirdFlex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 2em;
+  width: 24em;
+}
+
+.leftcontent .people .thirdFlex .noOfPeople {
+  margin-top: 0;
+  width: 10em;
+  height: 1em;
+}
+
+.leftcontent .people .thirdFlex .three .error-message {
+  width: 100%;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 4px;
+  padding-top: 10px;
+  color: #920d0d;
+}
+
+.leftcontent .people .peopleInput #icontwo {
+  width: 95%;
+  height: 100%;
+  border-style: none;
+  background-color: #bdd9db;
+  margin-top: 5px;
+  border-radius: 7px;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+.rightContent {
+  float: top;
+  float: right;
+  width: 24em;
+  background-color: #00494d;
+  margin: 0.5em;
+  border-radius: 30px;
+}
+
+.rightContent .Amounts {
+  padding: 0.5em;
+  color: white;
+}
+
+.rightContent .resetbutton {
+  margin-top: 20%;
+  background-color: #00494d;
+}
+
+.rightContent .resetbutton .reset {
+  background-color: #bdd9db;
+  margin-left: 5%;
+  width: 90%;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.rightContent .resetbutton .reset:hover {
+  background-color: #51cbd6;
+}
+
+.rightContent .resetbutton .reset:hover:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

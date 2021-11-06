@@ -15,29 +15,36 @@
 		<title>Frontend Mentor | Tip calculator app</title>
 	</head>
 	<body>
-		<div class="attribution">
+		<div class="container">
 			<div class="wrapper">
 				<div class="leftcontent">
-					<div>
-						<h2 id="bill">Bill</h2>
-						<h5 class="error-message" id="billerrorMessage">
-							Can't be a negative or zero
-						</h5>
-						<input
-							type="number"
-							id="iconone"
-							type="text"
-							placeholder=""
-							value=""
-							required
-							oninput="bill()"
-						/>
+					<div class="billContent">
+						<div class="billInput">
+							<div class="firstFlex">
+								<h2 class="key">Bill</h2>
+								<div class="one">
+									<h6 class="error-message" id="peopleErrorMessage">
+										Can't be a negative or zero
+									</h6>
+								</div>
+							</div>
+							<div class="iconone">
+								<input
+									type="number"
+									id="iconone"
+									placeholder="0"
+									value=""
+									required
+									oninput="bill()"
+								/>
+							</div>
+						</div>
 					</div>
-					<div>
-						<h2>Select Tip %</h2>
+					<div class="tip">
+						<h2 class="select">Select Tip %</h2>
 					</div>
-					<div>
-						<div class="darcyan" id="btn">
+					<div class="buttons">
+						<div class="five-fifteen">
 							<button onclick="custom(event)" value="5" class="arcyan">
 								5%
 							</button>
@@ -48,30 +55,41 @@
 								15%
 							</button>
 						</div>
-						<div class="darcyan1" id="btn">
-							<button onclick="custom(event)" value="25" class="arcyan">
-								25%
-							</button>
-							<button onclick="custom(event)" value="50" class="arcyan">
-								50%
-							</button>
-							<div class="cst">
-								<h6 class="error-message" id="tipError">Can't be negative</h6>
-								<input
-									type="number"
-									class="custominpt"
-									placeholder="Custom"
-									id="customs"
-									required
-									oninput="custom(event)"
-								/>
+						<div class="secondFlex">
+							<div class="toFifty">
+								<button onclick="custom(event)" value="25" class="arcyan">
+									25%
+								</button>
+								<button onclick="custom(event)" value="50" class="arcyan">
+									50%
+								</button>
+							</div>
+							<div class="customInput">
+								<div class="two">
+									<h6 class="error-message" id="tipError">Can't be negative</h6>
+								</div>
+								<div class="customs">
+									<input
+										type="number"
+										placeholder="Custom"
+										id="customs"
+										required
+										oninput="custom(event)"
+									/>
+								</div>
 							</div>
 						</div>
-						<div>
-							<h2>Number of People</h2>
-							<h5 class="error-message" id="peopleErrorMessage">
-								Can't be a negative or zero
-							</h5>
+					</div>
+					<div class="people">
+						<div class="thirdFlex">
+							<h2 class="noOfPeople">Number of People</h2>
+							<div class="three">
+								<h6 class="error-message" id="peopleErrorMessage">
+									Can't be a negative or zero
+								</h6>
+							</div>
+						</div>
+						<div class="peopleInput">
 							<input
 								type="number"
 								id="icontwo"
@@ -84,8 +102,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="darkcyan">
-					<div>
+				<div class="rightContent">
+					<div class="Amounts">
 						<div id="tip">
 							<p>
 								Tip Amount <br />
@@ -107,25 +125,23 @@
 							</p>
 						</div>
 					</div>
-					<div class="rstbtn">
+					<div class="resetbutton">
 						<button class="reset" onclick="reset()">RESET</button>
 					</div>
 				</div>
 			</div>
-
-			<footer>
-				<div>
-					<h3>
-						Challenge by
-						<a
-							href="https://www.frontendmentor.io?ref=challenge"
-							target="_blank"
-							>Frontend Mentor</a
-						>. Coded by &TRADE; <a href="#">Jedani</a>.
-					</h3>
-				</div>
-			</footer>
-			<script src="logic.js"></script>
 		</div>
+		<footer>
+			<div>
+				<h3>
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+						>Frontend Mentor</a
+					>. Coded by &TRADE; <a href="#">Jedani</a>.
+				</h3>
+			</div>
+		</footer>
+
+		<script src="logic.js"></script>
 	</body>
 </html>
