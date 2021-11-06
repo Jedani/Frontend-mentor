@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  border: 2px solid black;
+  border: 2px solid #c5e4e7;
   width: 100vw;
   height: 100vh;
   background-color: #c5e4e7;
@@ -293,5 +293,6 @@ body {
 
 footer {
   background-color: cadetblue;
+  height: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
