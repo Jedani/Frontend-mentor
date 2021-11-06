@@ -38,7 +38,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 12em;
+  margin-top: 11em;
   margin-left: 20%;
   margin-right: 10%;
   border-radius: 30px;
@@ -97,13 +97,13 @@ body {
   padding-top: 10px;
 }
 
-.leftcontent .billContent .billInput .iconone {
+.leftcontent .billContent .billInput .iconon {
   margin-top: 0.2em;
   width: 23.5em;
   height: 2.3em;
 }
 
-.leftcontent .billContent .billInput .iconone #iconone {
+.leftcontent .billContent .billInput .iconon #iconone {
   width: 95%;
   height: 100%;
   border-style: none;
@@ -289,5 +289,9 @@ body {
 
 .rightContent .resetbutton .reset:hover:hover {
   cursor: pointer;
+}
+
+footer {
+  background-color: cadetblue;
 }
 /*# sourceMappingURL=styles.css.map */

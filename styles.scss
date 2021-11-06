@@ -30,7 +30,7 @@ $inputColor: hsl(184, 30%, 80%);
 }
 
 @mixin margins {
-	margin-top: 12em;
+	margin-top: 11em;
 	margin-left: 20%;
 	margin-right: 10%;
 }
@@ -148,7 +148,7 @@ body {
 				}
 			}
 
-			.iconone {
+			.iconon {
 				margin-top: 0.2em;
 				width: 23.5em;
 				height: 2.3em;
@@ -270,4 +270,8 @@ body {
 			}
 		}
 	}
+}
+
+footer {
+	background-color: $footerColor;
 }

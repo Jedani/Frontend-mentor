@@ -9,7 +9,7 @@ function isNumeric(num) {
 
 // function to get the value input of bill, convert it to a number and choose whether to display error message.
 function bill() {
-	bills = Number(document.querySelector("#iconone").value);
+	bills = Number(document.getElementById("iconone").value);
 
 	if (bills <= 0) {
 		document.getElementById("billerrorMessage").style.display = "block";
